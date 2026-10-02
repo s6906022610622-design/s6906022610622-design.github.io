@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>แบบฟอร์มสมัครเรียน | มจพ.</title>
+
+<link rel="stylesheet"
+      href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <div class="container header-inner">
+
+      <a class="brand"
+         href="index.html"
+         style="text-decoration:none">
+
+        <img class="logo"
+             src="kmutnb_index_Logo.png"
+             alt="ตรามหาวิทยาลัย">
+
+        <div>
+
+          <div class="brand-th">
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+          </div>
+
+          <div class="brand-en">
+            KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK
+          </div>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="navbar">
+
+    <nav class="container nav-inner">
+
+      <a href="index.html">
+        หน้าแรก
+      </a>
+
+      <a href="about.html">
+        เกี่ยวกับ มจพ.
+      </a>
+
+      <a href="news.html">
+        ข่าวสาร
+      </a>
+
+      <a class="active"
+         href="admission.html">
+        สมัครเรียน
+      </a>
+
+      <a href="contact.html">
+        ติดต่อ
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<div class="page-head">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      หน้าแรก &gt; สมัครเรียน &gt; แบบฟอร์มสมัครเรียน
+    </div>
+
+    <h1>
+      แบบฟอร์มสมัครเรียน
+    </h1>
+
+  </div>
+
+</div>
+
+
+<main class="content">
+
+
+  <div class="container">
+
+
+    <div class="application-box">
+
+      <h2>
+        ข้อมูลผู้สมัคร
+      </h2>
+
+      <p class="muted">
+        กรุณากรอกข้อมูลให้ครบถ้วนก่อนยืนยันการสมัคร
+      </p>
+
+
+      <form>
+
+
+        <label>
+          ชื่อ
+        </label>
+
+        <input
+          type="text"
+          placeholder="ชื่อ">
+
+
+        <label>
+          นามสกุล
+        </label>
+
+        <input
+          type="text"
+          placeholder="นามสกุล">
+
+
+        <label>
+          เลขประจำตัวประชาชน
+        </label>
+
+        <input
+          type="text"
+          placeholder="เลขประจำตัวประชาชน">
+
+
+        <label>
+          อีเมล
+        </label>
+
+        <input
+          type="email"
+          placeholder="example@email.com">
+
+
+        <label>
+          เบอร์โทรศัพท์
+        </label>
+
+        <input
+          type="tel"
+          placeholder="08xxxxxxxx">
+
+
+        <label>
+          ระดับการศึกษา
+        </label>
+
+        <select>
+
+          <option value="">
+            -- เลือกระดับการศึกษา --
+          </option>
+
+          <option>
+            ปริญญาตรี
+          </option>
+
+          <option>
+            บัณฑิตศึกษา
+          </option>
+
+          <option>
+            โครงการพิเศษ
+          </option>
+
+        </select>
+
+
+        <label>
+          คณะ
+        </label>
+
+        <select>
+
+          <option value="">
+            -- เลือกคณะ --
+          </option>
+
+          <option>
+            คณะวิศวกรรมศาสตร์
+          </option>
+
+          <option>
+            คณะเทคโนโลยีสารสนเทศ
+          </option>
+
+          <option>
+            คณะวิทยาศาสตร์ประยุกต์
+          </option>
+
+          <option>
+            คณะครุศาสตร์อุตสาหกรรม
+          </option>
+
+        </select>
+
+
+        <label>
+          สาขาที่ต้องการสมัคร
+        </label>
+
+        <input
+          type="text"
+          placeholder="เช่น วิศวกรรมคอมพิวเตอร์">
+
+
+        <div class="application-actions">
+
+          <button
+            type="submit"
+            class="btn">
+
+            ยืนยันการสมัคร
+
+          </button>
+
+          <a
+            href="admission.html"
+            class="btn admission-secondary">
+
+            ย้อนกลับ
+
+          </a>
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+
+  </div>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container copyright">
+
+    Copyright © 2018 King Mongkut's University of Technology North Bangkok
+
+  </div>
+
+</footer>
+
+
+<script>
+
+if (localStorage.getItem("loggedIn") !== "true") {
+
+  window.location.href = "login.html";
+
+}
+
+</script>
+
+
+</body>
+</html>

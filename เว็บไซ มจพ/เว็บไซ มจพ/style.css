@@ -1,0 +1,1258 @@
+/* =========================================================
+   KMUTNB WEBSITE - MAIN CSS
+   ใช้สำหรับทุกหน้า
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #444;
+    background: #fff;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: 1180px;
+    max-width: 92%;
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    width: 100%;
+}
+
+/* ส่วนบนสีน้ำตาล */
+.header-top {
+    height: 124px;
+    background: #ff8000;
+    color: #fff;
+}
+
+.header-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO + ชื่อมหาวิทยาลัย */
+.brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.logo {
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+    margin-right: 18px;
+}
+
+.brand-th {
+    font-size: 24px;
+    line-height: 1.25;
+    white-space: nowrap;
+}
+
+.brand-en {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* เครื่องมือด้านขวา */
+.header-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.display-tools {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.display-tools b {
+    font-weight: normal;
+}
+
+.display-tools span {
+    width: 19px;
+    height: 19px;
+    border: 1px solid #555;
+    background: #fff;
+    color: #222;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+}
+
+.display-tools .dark {
+    background: #222;
+    color: #fff;
+    border-color: #fff;
+}
+
+.quick-tools {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Search */
+.search {
+    height: 25px;
+    width: 170px;
+    background: #fff;
+    display: flex;
+    margin-left: 10px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    width: 145px;
+    padding: 0 7px;
+}
+
+.search span {
+    color: #777;
+    padding: 0 6px;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.navbar {
+    height: 46px;
+    background: #212020;
+    color: #fff;
+}
+
+.nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-inner > a {
+    height: 28px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-right: 1px solid #777;
+
+    font-size: 14px;
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+.nav-inner > a:first-child {
+    padding-left: 0;
+}
+
+.nav-inner > a:hover,
+.nav-inner > a.active {
+    color: #b89a7c;
+}
+
+.nav-inner small {
+    font-size: 8px;
+    margin-left: 10px;
+}
+
+/* โลโก้ด้านขวาของเมนู */
+.nav-logos {
+    margin-left: auto;
+
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.nav-k {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #87939a;
+}
+
+.nav-round {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    border: 5px dotted #a98a6c;
+
+    display: block;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.page-head {
+    background: #f5f2ef;
+    border-bottom: 1px solid #ddd;
+
+    padding: 32px 0;
+}
+
+.page-head h1 {
+    margin: 0;
+
+    color: #8f7258;
+
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   GENERAL CONTENT
+   ========================================================= */
+
+.content {
+    padding: 38px 0 70px;
+}
+
+.section-title {
+    font-size: 24px;
+
+    color: #97785d;
+
+    font-weight: normal;
+
+    border-left: 5px solid #a98a6c;
+
+    padding-left: 13px;
+
+    margin: 35px 0 18px;
+}
+
+.card {
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    padding: 24px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+.grid {
+    display: grid;
+    gap: 22px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ปุ่ม */
+.btn {
+    display: inline-block;
+
+    background: #a98a6c;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 9px 18px;
+
+    border-radius: 3px;
+
+    border: 0;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #8f7258;
+}
+
+.muted {
+    color: #777;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+.hero {
+    background: #f5f2ef;
+
+    padding: 65px 0;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+
+    color: #8f7258;
+
+    margin: 0 0 10px;
+
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 18px;
+
+    margin: 0;
+
+    color: #666;
+}
+
+.quick-cards {
+    margin-top: -30px;
+
+    position: relative;
+}
+
+.quick-card {
+    text-decoration: none;
+
+    display: block;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    border-top: 4px solid #a98a6c;
+
+    background: #fff;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+
+    transition: 0.2s;
+}
+
+.quick-card:hover {
+    transform: translateY(-3px);
+}
+
+.quick-card h3 {
+    margin: 0 0 6px;
+
+    color: #8f7258;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.history-item {
+    border-bottom: 1px solid #ddd;
+
+    padding: 0 0 24px;
+
+    margin-bottom: 28px;
+}
+
+/* ปี พ.ศ. */
+.year {
+    display: inline-block;
+
+    background: #a98a6c;
+
+    color: #fff;
+
+    padding: 5px 14px;
+
+    margin-bottom: 10px;
+
+    font-size: 17px;
+}
+
+.history-item h3 {
+    margin: 4px 0 10px;
+
+    color: #555;
+
+    font-size: 19px;
+}
+
+.about p,
+.about li {
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+.about ul,
+.about ol {
+    padding-left: 30px;
+}
+
+.value-list strong {
+    color: #8f7258;
+}
+
+
+/* =========================================================
+   NEWS PAGE
+   ========================================================= */
+
+.news-card {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    background: #fff;
+
+    transition: 0.2s;
+}
+
+.news-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+
+.news-date {
+    font-size: 13px;
+
+    color: #a98a6c;
+}
+
+.news-card h3 {
+    margin: 5px 0 8px;
+
+    color: #555;
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+.contact-card h3 {
+    margin: 0 0 10px;
+
+    color: #8f7258;
+
+    font-weight: normal;
+
+    font-size: 21px;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+/* Google Map */
+.map {
+    width: 100%;
+    height: 330px;
+
+    border: 0;
+}
+
+/* แบ่งแผนที่ + ข้อมูล */
+.contact-layout {
+    display: grid;
+
+    grid-template-columns: 1.8fr 1fr;
+
+    gap: 24px;
+}
+
+
+/* ปุ่มเลือกวิทยาเขต */
+.campus-tabs {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.campus-tabs a {
+    padding: 9px 18px;
+
+    border: 1px solid #c9b7a6;
+
+    text-decoration: none;
+
+    color: #80654f;
+
+    transition: 0.2s;
+}
+
+.campus-tabs a:hover,
+.campus-tabs a.active {
+    background: #a98a6c;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    background: #222;
+
+    color: #fff;
+
+    padding: 38px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1.4fr;
+
+    gap: 70px;
+}
+
+.site-footer h3 {
+    font-weight: normal;
+
+    color: #c0a58c;
+
+    margin: 0 0 8px;
+}
+
+.site-footer a {
+    display: block;
+
+    color: #fff;
+
+    margin: 3px 0;
+}
+
+.footer-contact p {
+    margin: 3px 0;
+}
+
+.copyright {
+    text-align: right;
+
+    margin-top: 32px;
+
+    font-size: 13px;
+
+    color: #ddd;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .header-top {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .header-inner {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .header-tools {
+        display: none;
+    }
+
+    .brand-th,
+    .brand-en {
+        white-space: normal;
+    }
+
+    .brand-th {
+        font-size: 19px;
+    }
+
+    .brand-en {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .nav-inner {
+        overflow-x: auto;
+    }
+
+    .nav-inner > a {
+        padding: 11px 15px;
+    }
+
+    .nav-logos {
+        display: none;
+    }
+
+    .grid-3,
+    .grid-2,
+    .contact-layout,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+
+/* =========================================================
+   ADMISSION PAGE
+   ========================================================= */
+
+.admission-intro {
+    max-width: 900px;
+}
+
+.admission-intro p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* การ์ดระดับการศึกษา */
+
+.admission-card {
+    min-height: 220px;
+}
+
+.admission-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #8f7258;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.admission-card p {
+    min-height: 75px;
+}
+
+
+/* ตารางกำหนดการ */
+
+.admission-table {
+    width: 100%;
+
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.admission-row {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    border-bottom: 1px solid #ddd;
+
+    min-height: 70px;
+
+    align-items: center;
+}
+
+.admission-row:last-child {
+    border-bottom: 0;
+}
+
+.admission-row > div {
+    padding: 15px 20px;
+}
+
+.admission-head {
+    background: #a98a6c;
+
+    color: #fff;
+
+    font-weight: bold;
+}
+
+.admission-row strong {
+    color: #8f7258;
+}
+
+.admission-row p {
+    margin: 3px 0 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* รายการคณะ */
+
+.admission-list {
+    border: 1px solid #ddd;
+}
+
+.admission-list-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.admission-list-item:last-child {
+    border-bottom: 0;
+}
+
+.admission-list-item h3 {
+    margin: 0 0 5px;
+
+    color: #8f7258;
+
+    font-weight: normal;
+
+    font-size: 20px;
+}
+
+.admission-list-item p {
+    margin: 0;
+
+    color: #666;
+}
+
+
+/* กล่องข้อมูลผู้สมัคร */
+
+.admission-note {
+    margin-top: 35px;
+
+    padding: 28px;
+
+    background: #f5f2ef;
+
+    border-left: 5px solid #a98a6c;
+}
+
+.admission-note h3 {
+    margin-top: 0;
+
+    color: #8f7258;
+
+    font-weight: normal;
+}
+
+.admission-note p {
+    margin-bottom: 20px;
+}
+
+.admission-secondary {
+    background: #555;
+
+    margin-left: 8px;
+}
+
+.admission-secondary:hover {
+    background: #333;
+}
+
+
+/* Responsive */
+
+@media (max-width: 950px) {
+
+    .admission-row {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-head {
+        display: none;
+    }
+
+    .admission-row > div {
+        padding: 10px 15px;
+    }
+
+    .admission-list-item {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .admission-secondary {
+        margin-left: 5px;
+    }
+
+}
+
+
+
+/* =========================================================
+   ADMISSION PAGE
+   ========================================================= */
+
+.admission-hero {
+    text-align: center;
+    padding: 45px 30px;
+    background: #f5f2ef;
+    border: 1px solid #ddd;
+    margin-bottom: 35px;
+}
+
+.admission-hero h2 {
+    margin: 0 0 8px;
+    color: #8f7258;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.admission-hero p {
+    margin: 5px 0;
+}
+
+.admission-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admission-secondary {
+    background: #fff;
+    color: #8f7258;
+    border: 1px solid #a98a6c;
+}
+
+.admission-secondary:hover {
+    background: #a98a6c;
+    color: #fff;
+}
+
+.admission-card h3 {
+    color: #8f7258;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.admission-table {
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.admission-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 20px;
+    align-items: center;
+}
+
+.admission-row:last-child {
+    border-bottom: 0;
+}
+
+.admission-head {
+    background: #a98a6c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.admission-row p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.admission-list {
+    border: 1px solid #ddd;
+    margin-bottom: 35px;
+}
+
+.admission-list-item {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admission-list-item:last-child {
+    border-bottom: 0;
+}
+
+.admission-list-item h3 {
+    margin: 0 0 5px;
+    color: #8f7258;
+    font-weight: normal;
+}
+
+.admission-list-item p {
+    margin: 0;
+    .admission-list-item p {
+    margin: 0;
+}
+
+
+/* รายการคณะ */
+.admission-list-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.admission-list-item:hover {
+    background-color: #f8f5f2;
+    border-color: #a98a6c;
+}
+
+.admission-list-item h3 {
+    color: #a98a6c;
+    margin-top: 0;
+}
+
+.admission-list-item p {
+    color: #555;
+}
+}
+
+.admission-note {
+    border: 1px solid #a98a6c;
+    padding: 25px;
+    margin-top: 35px;
+    background: #fdfbf9;
+}
+
+.admission-note h3 {
+    margin-top: 0;
+    color: #8f7258;
+}
+
+
+/* =========================================================
+   LOGIN PAGE
+   ========================================================= */
+
+.login-box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.login-box h2 {
+    margin-top: 0;
+    color: #8f7258;
+    font-weight: normal;
+    text-align: center;
+}
+
+.login-box form {
+    margin-top: 25px;
+}
+
+.login-box label,
+.application-box label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+}
+
+.login-box input,
+.application-box input,
+.application-box select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: inherit;
+}
+
+.login-box input:focus,
+.application-box input:focus,
+.application-box select:focus {
+    border-color: #a98a6c;
+}
+
+.login-box button {
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.login-message {
+    color: #a33;
+    margin-top: 12px;
+}
+
+.login-register {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.login-register a {
+    color: #8f7258;
+}
+
+
+/* =========================================================
+   APPLICATION FORM
+   ========================================================= */
+
+.application-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.application-box h2 {
+    margin-top: 0;
+    color: #8f7258;
+    font-weight: normal;
+    border-left: 5px solid #a98a6c;
+    padding-left: 12px;
+}
+
+.application-box select {
+    background: #fff;
+}
+
+.application-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.application-actions button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ADMISSION RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .admission-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .admission-head {
+        display: none;
+    }
+
+    .login-box,
+    .application-box {
+        padding: 22px;
+    }
+
+}
+
+/* =========================================================
+   REGISTER PAGE
+   ========================================================= */
+
+.register-box {
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 34px;
+
+    border: 1px solid #ddd;
+    background: #fff;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+.register-box h2 {
+    margin: 0 0 10px;
+
+    text-align: center;
+
+    color: #8f7258;
+
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.register-intro {
+    text-align: center;
+    color: #777;
+
+    margin-bottom: 28px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #555;
+
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #a98a6c;
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.register-check {
+    margin: 20px 0;
+
+    font-size: 13px;
+    color: #666;
+}
+
+.register-check input {
+    margin-right: 7px;
+}
+
+.register-btn {
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.register-login {
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+
+    color: #777;
+}
+
+.register-login a {
+    color: #8f7258;
+
+    margin-left: 5px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .register-box {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
